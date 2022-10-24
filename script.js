@@ -143,7 +143,10 @@ signUpForm.addEventListener("submit", async function (e) {
 
   console.log(signupResponse);
 
-  if (signupResponse.success) openModalLogin(e);
+  if (signupResponse.success) {
+    alert(`${userName} Successfully Registered !`);
+    openModalLogin(e);
+  }
 });
 
 ///////////////////////////////////////
