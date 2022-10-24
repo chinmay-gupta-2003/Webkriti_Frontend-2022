@@ -5,6 +5,7 @@ const getAllUserEventsEndpoint = "/events/allUserEvents";
 const UserRegistrationManagementEndpoint = "/events/registration/";
 const userSignUpEndpoint = "/users/sign-up";
 const userSignInEndpoint = "/users/sign-in";
+const userInfoEndpoint = "/users/info";
 
 var events = [];
 
@@ -109,14 +110,40 @@ const signInUser = async (email, password) => {
     localStorage.setItem("access_token", token);
     console.log("Token saved successfully in local storage");
 
+    isAccessToken();
+
     return true;
   } catch (err) {
     console.log(err);
+
     alert(`Failed to sign up user : ${err?.response?.data?.message}`);
   }
 };
 
-const isAccessToken = () => localStorage.getItem("access_token") !== null;
+const capatalize = (word) =>
+  word.slice(0, 1).toUpperCase() + word.toLowerCase().slice(1, word.length);
+
+const isAccessToken = async () => {
+  try {
+    const token = localStorage.getItem("access_token");
+    if (!token) {
+      return false;
+    }
+    const { data } = await AuthClient.get(userInfoEndpoint, {
+      headers: {
+        Authorization: "bearer " + token,
+      },
+    });
+    console.log(data);
+    document.querySelector(
+      "body > header > nav > ul > li.nav__item.btn--user > a"
+    ).innerHTML = "Logout " + capatalize(data.user.name);
+    return true;
+  } catch (err) {
+    console.log(err);
+    alert("Failed to verify session, signin again");
+  }
+};
 
 const getAllUserEvents = async () => {
   try {

@@ -721,10 +721,10 @@ document.querySelector(".user-eve-link").addEventListener("click", function () {
   window.location = "./user-events.html";
 });
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
   document.querySelector(".loader-container").style.display = "none";
 
   getAllEventsCards();
 
-  if (isAccessToken()) signInState();
+  if (await isAccessToken()) signInState();
 });
