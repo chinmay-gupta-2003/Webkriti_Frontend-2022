@@ -50,6 +50,7 @@ const btnRight = document.querySelector(".slider__btn--right");
 const dotsCont = document.querySelector(".dots");
 const themes = document.querySelector(".color-themes");
 const allthemes = document.querySelectorAll(".theme-icon");
+const contactForm = document.querySelector(".contact-us-form");
 
 const navPaneHeight = navPane.getBoundingClientRect().height;
 const maxSlide = slides.length - 1;
@@ -58,6 +59,7 @@ const userNameCt = document.querySelector(".in-name");
 const userEmailCt = document.querySelector(".in-email");
 const userPasswordCt = document.querySelector(".in-password");
 const userConPassCt = document.querySelector(".in-con--password");
+const btnContactUs = document.querySelector(".form_submit--btn");
 
 let i = 0;
 let currentSlide = 0;
@@ -432,6 +434,12 @@ document.addEventListener("keydown", function (e) {
 
 overlay.addEventListener("click", function () {
   if (!contactUs.classList.contains("hidden")) closeContact();
+});
+
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Feedback Sent 💌");
+  closeContact();
 });
 
 ///////////////////////////////////////
