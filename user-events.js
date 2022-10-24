@@ -39,10 +39,15 @@ const getAllEventsCards = async () => {
   document.querySelector(".features").innerHTML =
     eventCardsHtml !== ""
       ? eventCardsHtml
-      : "<h1 style='color:var(--color-primary);font-size:2rem;margin-bottom:40vh;letter-spacing:0.84px;font-weight:400'>No events found, please Register !</h1>";
+      : "<span> <a href='./events.html'  style= 'text-decoration:none; display:inline-block; border-bottom:2px solid var(--color-primary-darker); color:var(--color-primary);font-size:2rem;margin-bottom:40vh;letter-spacing:0.84px;font-weight:400'>No events found, please Register !</a></span>";
   document
     .querySelectorAll(".btn--explore-event")
     .forEach((btnModal) => btnModal.addEventListener("click", openEvent));
+
+  document
+    .querySelectorAll(".features__img")
+    .forEach((btnModal) => btnModal.addEventListener("click", openEvent));
+
   document.querySelectorAll(".btn--revoke-event").forEach((revokeBtn) => {
     revokeBtn.addEventListener("click", openWithdraw);
   });

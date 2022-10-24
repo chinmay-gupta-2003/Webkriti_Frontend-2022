@@ -316,6 +316,10 @@ const getAllEventsCards = async () => {
   document
     .querySelectorAll(".btn--explore-event")
     .forEach((btnModal) => btnModal.addEventListener("click", openEvent));
+
+  document
+    .querySelectorAll(".features__img")
+    .forEach((btnModal) => btnModal.addEventListener("click", openEvent));
 };
 
 const getLocalTime = (time) => {

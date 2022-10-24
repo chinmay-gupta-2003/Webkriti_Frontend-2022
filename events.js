@@ -42,6 +42,10 @@ const getAllEventsCards = async () => {
   document
     .querySelectorAll(".btn--explore-event")
     .forEach((btnModal) => btnModal.addEventListener("click", openEvent));
+
+  document
+    .querySelectorAll(".features__img")
+    .forEach((btnModal) => btnModal.addEventListener("click", openEvent));
 };
 
 const getLocalTime = (time) => {
@@ -98,10 +102,6 @@ const closeEvent = function () {
   exploreEvent.classList.add("hidden");
   overlay.classList.add("hidden");
 };
-
-btnShowEvent.forEach((btnModal) =>
-  btnModal.addEventListener("click", openEvent)
-);
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !exploreEvent.classList.contains("hidden"))

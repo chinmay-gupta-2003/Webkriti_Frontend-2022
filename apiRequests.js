@@ -126,18 +126,22 @@ const capatalize = (word) =>
 const isAccessToken = async () => {
   try {
     const token = localStorage.getItem("access_token");
+    const element = document.querySelector(
+      "body > header > nav > ul > li.nav__item.btn--user > a"
+    );
+
     if (!token) {
       return false;
     }
+
     const { data } = await AuthClient.get(userInfoEndpoint, {
       headers: {
         Authorization: "bearer " + token,
       },
     });
-    console.log(data);
-    document.querySelector(
-      "body > header > nav > ul > li.nav__item.btn--user > a"
-    ).innerHTML = "Logout " + capatalize(data.user.name);
+
+    if (element) element.innerHTML = "Logout " + capatalize(data.user.name);
+
     return true;
   } catch (err) {
     console.log(err);
