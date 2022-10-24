@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html data-theme="violet" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./img/Techomia-1.png" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./cdnjs/mustache.js" defer></script>
+
+    <script defer src="script.js"></script>
+    <script defer src="./globe.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <title>Techomia | Fest Manager</title>
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div class="loader-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+        <circle
+          id="arc1"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="120"
+          opacity=".89"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="12"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc2"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="120"
+          opacity=".49"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="8"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc3"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="100"
+          opacity=".49"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="20"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc4"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="120"
+          opacity=".49"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="30"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc5"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="100"
+          opacity=".89"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="8"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc6"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="90"
+          opacity=".49"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="16"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc7"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="90"
+          opacity=".89"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="8"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc8"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="80"
+          opacity=".79"
+          fill="#4DD0E1"
+          fill-opacity="0"
+          stroke="#632b26"
+          stroke-width="8"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+      </svg>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <video playsinline autoplay poster="./img//hero.jpg" muted>
+        <source src="./video/hero (1).mp4" type="video/mp4" />
+      </video>
+
+      <nav class="nav">
+        <img
+          src="./img/violet.png"
+          data-color="violet"
+          alt="techfest logo"
+          class="nav__logo"
+          id="logo"
+        />
+
+        <ul class="nav__links">
+          <li class="nav__item nav__item--effect">
+            <a class="nav__link all-events nav__link-hover" href="./events.html"
+              >Events</a
+            >
+          </li>
+          <li class="nav__item nav__item--effect">
+            <a class="nav__link nav__link-hover" href="#section--2"
+              >How it Works</a
+            >
+          </li>
+          <li class="nav__item nav__item--effect">
+            <a class="nav__link nav__link-hover" href="#section--3"
+              >Testimonials</a
+            >
+          </li>
+          <li class="nav__item btn--show-modal-cont">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Create account</a
+            >
+          </li>
+          <li class="nav__item user--eve_link nav__item--effect hide">
+            <a
+              class="nav__link user-eve-link nav__link-hover"
+              href="/user-events.html"
+              >Your Events</a
+            >
+          </li>
+          <li class="nav__item btn--user hide">
+            <a class="nav__link nav__link--btn" href="#">Logout </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          <span class="highlight">Unleashing</span>
+          complexities<br />
+          of &nbsp;
+          <span class="highlight">event handling</span>
+        </h1>
+        <h4>
+          An event is not done until <br />
+          everyone is overwhelmed of it!
+        </h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img src="" class="header__img" alt="" />
+      </div>
+    </header>
+
+    <!-- Sections -->
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Events</h2>
+        <h3 class="section__header">
+          Join the world's best online and in-person events.
+        </h3>
+      </div>
+
+      <div class="features"></div>
+
+      <div class="event-btn-container">
+        <button class="btn btn--explore-all-events">Explore all Events</button>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <video playsinline autoplay muted loop>
+        <source src="./video/video (1).mp4" type="video/mp4" />
+      </video>
+      <div class="section__title">
+        <h2 class="section__description">How it Works</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but not simpler.
+        </h3>
+      </div>
+
+      <div class="appear--animation-2">
+        <div class="operations">
+          <div class="operations__tab-container">
+            <button
+              class="btn operations__tab operations__tab--1 operations__tab--active"
+              data-tab="1"
+            >
+              <span>01</span>Explore events.
+            </button>
+            <button class="btn operations__tab operations__tab--2" data-tab="2">
+              <span>02</span>Enroll yourself.
+            </button>
+            <button class="btn operations__tab operations__tab--3" data-tab="3">
+              <span>03</span>Withdraw yourself.
+            </button>
+          </div>
+
+          <div
+            class="operations__content operations__content--1 operations__content--active"
+          >
+            <div class="operations__icon operations__icon--1">
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
+            <h5 class="operations__header">Event handling made easy!</h5>
+            <p>
+              Deep dive into the specifications of each and every aspect of the
+              events. Unravel the infinite thrill and excitement of the
+              anticipated events and get electrified. Make up your mind for an
+              unparalled experience.
+            </p>
+          </div>
+
+          <div class="operations__content operations__content--2">
+            <div class="operations__icon operations__icon--2">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+            </div>
+            <h5 class="operations__header">Get yourself Enrolled!</h5>
+            <p>
+              Hold on! now its time to take action. Put on your seat belts and
+              gear yourself for a remarkable journey of experiences. Get on the
+              track and enroll yourself to take the first step towards an
+              astonishing expedition.
+            </p>
+          </div>
+
+          <div class="operations__content operations__content--3">
+            <div class="operations__icon operations__icon--3">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </div>
+            <h5 class="operations__header">Changed your mind!</h5>
+            <p>
+              Being a human, mistakes are inevitable, Don't worry we provide a
+              chance to ammend it. In case you enrolled yourself for a
+              particular event but now you changed your mind and wish to enroll
+              youself for another event , then you can easily withdraw from the
+              first event and get yourself enrolled for another event. However,
+              if you want to enroll yourself for more than one event, we have
+              got you covered.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Testimonials</h2>
+        <h3 class="section__header">What people are saying about us ?</h3>
+      </div>
+
+      <div class="slider appear--animation-2">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <div class="align">
+              <h5 class="testimonial__header">
+                Thank you for a hugely successful fest!
+              </h5>
+              <blockquote class="testimonial__text">
+                I want to thank your amazing team for the smooth organization of
+                various events of our annual fest “Aurora”. Your professionalism
+                and attention to detail throughout the event planning process
+                ensured the success of the event, even after two postponements
+                due to the pandemic. Everyone on your staff was easy to work
+                with and responsive.
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Chinmay Gupta</h6>
+                <p class="testimonial__location">Agra, U.P</p>
+              </address>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <div class="align">
+              <h5 class="testimonial__header">
+                "It was pleasure working with your team".
+              </h5>
+              <blockquote class="testimonial__text">
+                I can still feel the energy buzzing from yesterday’s fest
+                TechFest “Technophilia”. What a wonderful success it was ! Thank
+                you for all that you did to make this techfest run so smoothly.
+                We could not do it without your team! We look forward to the
+                management of many more successful fests with you!
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="img/user-2.jpeg" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Manasvi Khatri</h6>
+                <p class="testimonial__location">Bhopal, M.P</p>
+              </address>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <div class="align">
+              <h5 class="testimonial__header">
+                Great job ! Well done Techomia!
+              </h5>
+              <blockquote class="testimonial__text">
+                You and your team did an outstanding job making the Annual
+                celebration so spectacular. Our sincerest gratitude for taking
+                on this very special project with such enthusiasm, energy and
+                keen attention to detail. We are lucky to have discovered and
+                trusted “Techomia”, What a strong partner in the team! Thanks
+                Again!
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+                <h6 class="testimonial__name">Karuna Singhal</h6>
+                <p class="testimonial__location">Dholpur, Raj.</p>
+              </address>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <video playsinline autoplay muted loop>
+        <source src="./video/video (3).mp4" type="video/mp4" />
+      </video>
+      <div class="sign--up-subcont">
+        <div class="section__title">
+          <h2 class="section__description">Overview</h2>
+          <h3 class="section__header">Events at a glance</h3>
+          <span class="content--1"></span>
+        </div>
+      </div>
+      <button class="btn btn--show-modal">Signup now!</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link about--btn">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link use--btn">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link privacy--btn">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link contact-us">Contact Us</a>
+        </li>
+      </ul>
+      <img src="./img/violet.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">&copy; Copyright by Chinmay Gupta.</p>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Create your account in &nbsp; <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>Name</label>
+        <input class="in-name" type="text" required />
+        <label>Email Address</label>
+        <input class="in-email" type="email" required />
+        <label>Password</label>
+        <input class="in-password" type="password" required />
+        <label>Confirm Password</label>
+        <input class="in-con--password" type="password" required />
+        <button type="submit" class="btn btn--signup">Sign Up</button>
+        <p class="have--account">
+          Already have an account ? <span class="have--login">Login</span>
+        </p>
+      </form>
+    </div>
+
+    <div class="modal--login hidden">
+      <button class="btn--close-modal--login">&times;</button>
+      <h2 class="modal__header--login">
+        <span class="highlight">&nbsp;Login&nbsp;</span>
+      </h2>
+      <form class="modal__form--login">
+        <label>Email Address</label>
+        <input class="sin--email" type="email" required />
+        <label>Password</label>
+        <input class="sin--pass" type="password" required />
+        <button type="submit" class="btn btn--login">Login</button>
+      </form>
+    </div>
+
+    <div class="booking__cont hidden">
+      <button class="btn--close-modal btn--close-contact">&times;</button>
+      <div class="booking__form">
+        <div class="section__header--wrapper">
+          <h2 class="section__header">Contact Us</h2>
+        </div>
+        <form class="form">
+          <div class="form__sub-cont">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Full name"
+              id="full-name"
+              name="Full Name"
+              required
+            />
+            <label class="form-label" for="full-name">Full name</label>
+          </div>
+          <div class="form__sub-cont">
+            <input
+              class="form-input"
+              type="email"
+              placeholder="Email address"
+              id="email"
+              name="Email"
+              required
+            />
+            <label class="form-label" for="email">Email address </label>
+          </div>
+
+          <div class="form__sub-cont">
+            <textarea
+              name="feedback"
+              id="feedback"
+              placeholder="Feedback"
+              class="form-input form-input-feedback"
+            ></textarea>
+            <label class="form-label" for="feedback">Feedback</label>
+          </div>
+
+          <div class="form__button-cont">
+            <button class="form_submit--btn btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal--about hidden">
+      <button class="btn--close-about">&times;</button>
+      <h2 class="modal__header--about">
+        <span class="highlight">&nbsp;About&nbsp;</span>
+      </h2>
+      <p class="about--description">
+        At TECHOMIA, we believe there is a better way to do event handling, a
+        more valuable, less invasive way where organizations and universities
+        are earned rather than bought. For the past 5 years various
+        organizations and universities have been trusting us immensely for
+        organising various events and Techfests round the year. We are
+        obsessively passionate about it. The Novelty associated with TECHOMIA is
+        that our website is inexhautible. It cannot be used for organising just
+        single event/fest instead can be used to organise multiple events/fest
+        round the year by client organization.
+      </p>
+    </div>
+
+    <div class="modal--privacy hidden">
+      <button class="btn--close-privacy">&times;</button>
+      <h2 class="modal__header--privacy">
+        <span class="highlight">&nbsp;Privacy Policy&nbsp;</span>
+      </h2>
+      <p class="about--description privacy--description">
+        We don't sell any of your information to anyone and we never will. We
+        also impose strict restrictions on how our partners can use and disclose
+        the data we provide.We provide you with the ability to access, rectify,
+        port and delete your data.
+      </p>
+    </div>
+
+    <div class="modal--use hidden">
+      <button class="btn--close-use">&times;</button>
+      <h2 class="modal__header--use">
+        <span class="highlight">&nbsp;Terms of Use&nbsp;</span>
+      </h2>
+      <p class="about--description use--description">
+        By using the Sites, you agree to these Terms of Use. If you do not agree
+        to these terms of use, you may not be allowed to use this website. We
+        reserve various right, at our sole discretion, to change, modify, add,
+        or delete portions of the website.This Sites and their Content are
+        protected by the copyright laws. All rights, title, and interest to the
+        Content contained in the Sites belong to the affiliates or contributors
+        who have authorised the use of their work on the Sites.You may not use
+        any of the marks or logos appearing throughout these Sites without
+        express written permission from the trademark owner, except as permitted
+        pursuant to applicable law.
+      </p>
+    </div>
+
+    <div class="booking__cont explore--event-popup hidden"></div>
+
+    <div class="modal modal--enroll hidden">
+      <button class="btn--close-about btn--close-enroll">&times;</button>
+
+      <p class="about--description">
+        Are you sure, you want to enroll for the event ?
+      </p>
+
+      <div class="enroll-btn--cont">
+        <button class="btn okay--btn">Okay</button>
+
+        <button class="btn cancel--btn">Cancel</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+    <div class="overlay--login hidden"></div>
+
+    <!-- Color Themes -->
+    <div class="color-themes">
+      <div
+        data-theme="violet"
+        class="theme-active theme-icon theme-icon--violet"
+      ></div>
+      <div data-theme="pink" class="theme-icon theme-icon--pink"></div>
+      <div data-theme="cyan" class="theme-icon theme-icon--cyan"></div>
+      <div data-theme="lime" class="theme-icon theme-icon--lime"></div>
+      <div data-theme="indigo" class="theme-icon theme-icon--indigo"></div>
+      <div data-theme="yellow" class="theme-icon theme-icon--yellow"></div>
+      <div data-theme="teal" class="theme-icon theme-icon--teal"></div>
+      <div data-theme="orange" class="theme-icon theme-icon--orange"></div>
+    </div>
+
+    <!-- Moustache -->
+    <script type="text/html" id="event-popup-template">
+      <video poster="{{mediaimage}}" playsinline autoplay muted loop>
+        <source src="{{mediavideo}}" type="video/mp4" />
+      </video>
+      <button class="btn--close-modal btn--close-event">&times;</button>
+      <div class="booking__form booking__form--event">
+        <div class="section__header--wrapper">
+          <h2 class="section__header">{{name}}</h2>
+        </div>
+
+        <div class="event-description--cont">
+          <p class="event-description">{{longdescription}}</p>
+          <div class="event-description--date-cont">
+            <span class="event-description event-description--start"
+              ><strong>Start Date: </strong>{{startdate}}</span
+            >
+            <span class="event-description event-description--end"
+              ><strong>End Date: </strong>{{enddate}}</span
+            >
+          </div>
+        </div>
+
+        <div class="form__button-cont">
+          <button
+            class="btn enroll--btn"
+            onclick="(()=>location.replace('/events.html'))()"
+          >
+            Enroll Yourself
+          </button>
+        </div>
+      </div>
+    </script>
+
+    <script id="event-card-template" type="text/html">
+      <div class="features-cont">
+        <img
+          src="{{mediaimage}}"
+          alt="ic"
+          class="features__img appear--animation-1"
+        />
+        <div class="features__feature appear--animation-1 {{directionClass}}">
+          <h5 class="features__header">{{name}}</h5>
+          <p>{{shortdescription}}</p>
+          <button data-event-id="{{id}}" class="btn--text btn--explore-event">
+            Explore event &rightarrow;
+          </button>
+        </div>
+      </div>
+    </script>
+
+    <script src="./apiRequests.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html data-theme="violet" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./img/Techomia-1.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <title>Techomia | Fest Manager</title>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./cdnjs/mustache.js" defer></script>
+
+    <script src="./apiRequests.js"></script>
+    <script defer src="./user-events.js"></script>
+  </head>
+  <body>
+    <div class="loader-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+        <circle
+          id="arc1"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="120"
+          opacity=".89"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="12"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc2"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="120"
+          opacity=".49"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="8"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc3"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="100"
+          opacity=".49"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="20"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc4"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="120"
+          opacity=".49"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="30"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc5"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="100"
+          opacity=".89"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="8"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc6"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="90"
+          opacity=".49"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="16"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc7"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="90"
+          opacity=".89"
+          fill="none"
+          stroke="#632b26"
+          stroke-width="8"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+        <circle
+          id="arc8"
+          class="circle"
+          cx="150"
+          cy="150"
+          r="80"
+          opacity=".79"
+          fill="#4DD0E1"
+          fill-opacity="0"
+          stroke="#632b26"
+          stroke-width="8"
+          stroke-linecap="square"
+          stroke-opacity=".99213"
+          paint-order="fill markers stroke"
+        />
+      </svg>
+    </div>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Events</h2>
+        <h3 class="section__header">
+          Join the world's best online and in-person fests.
+        </h3>
+      </div>
+
+      <div class="features"></div>
+    </section>
+
+    <div class="booking__cont explore--event-popup hidden"></div>
+
+    <div class="color-themes">
+      <div
+        data-theme="violet"
+        class="theme-active theme-icon theme-icon--violet"
+      ></div>
+      <div data-theme="pink" class="theme-icon theme-icon--pink"></div>
+      <div data-theme="cyan" class="theme-icon theme-icon--cyan"></div>
+      <div data-theme="lime" class="theme-icon theme-icon--lime"></div>
+      <div data-theme="indigo" class="theme-icon theme-icon--indigo"></div>
+      <div data-theme="yellow" class="theme-icon theme-icon--yellow"></div>
+      <div data-theme="teal" class="theme-icon theme-icon--teal"></div>
+      <div data-theme="orange" class="theme-icon theme-icon--orange"></div>
+    </div>
+
+    <div class="modal modal--withdraw hidden">
+      <p class="about--description">
+        Are you sure, you want to withdraw from the event ?
+      </p>
+
+      <div class="withdraw-btn--cont">
+        <button class="btn okay--btn-withdraw">Okay</button>
+
+        <button class="btn cancel--btn-withdraw">Cancel</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <button class="btn back--btn">Back</button>
+
+    <script type="text/html" id="event-popup-template">
+      <video poster="{{mediaimage}}" playsinline autoplay muted loop>
+        <source src="{{mediavideo}}" type="video/mp4" />
+      </video>
+      <button class="btn--close-modal btn--close-event">&times;</button>
+      <div class="booking__form booking__form--event">
+        <div class="section__header--wrapper">
+          <h2 class="section__header">{{name}}</h2>
+        </div>
+
+        <div class="event-description--cont">
+          <p class="event-description">{{longdescription}}</p>
+          <div class="event-description--date-cont">
+            <span class="event-description event-description--start"
+              ><strong>Start Date: </strong>{{startdate}}</span
+            >
+            <span class="event-description event-description--end"
+              ><strong>End Date: </strong>{{enddate}}</span
+            >
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script id="event-card-template" type="text/html">
+      <div class="features-cont">
+        <img
+          src="{{mediaimage}}"
+          alt="ic"
+          class="features__img appear--animation-1"
+        />
+        <div class="features__feature appear--animation-1 {{directionClass}}">
+          <h5 class="features__header">{{name}}</h5>
+          <p>{{shortdescription}}</p>
+          <button data-event-id="{{id}}" class="btn--text btn--explore-event">
+            Explore event &rightarrow;
+          </button>
+          <button data-event-id="{{id}}" class="btn--text btn--revoke-event">
+            Withdraw &rarr;
+          </button>
+        </div>
+      </div>
+    </script>
+  </body>
+</html>
