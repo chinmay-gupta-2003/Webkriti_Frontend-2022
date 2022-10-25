@@ -1,6 +1,9 @@
 **##TECHOMIA:**
 Unleashing complexities of Event Handling
 
+**DESCRIPTION:**
+At TECHOMIA, we believe there is a better way to do event handling, a more valuable, less invasive way where organizations and universities are earned rather than bought. We are obsessively passionate about it. The Novelty associated with TECHOMIA is that our website is inexhautible. It cannot be used for organising just single event/fest instead can be used to organise multiple events/fest round the year by client organization.
+
 **##SCREENSHOTS:**
 
 _#Hero Section#_
@@ -36,9 +39,6 @@ _#Contact Us_
 _#Terms of Use_
 ![This is an image](./readme_img/tou.png)
 
-**DESCRIPTION:**
-At TECHOMIA, we believe there is a better way to do event handling, a more valuable, less invasive way where organizations and universities are earned rather than bought. We are obsessively passionate about it. The Novelty associated with TECHOMIA is that our website is inexhautible. It cannot be used for organising just single event/fest instead can be used to organise multiple events/fest round the year by client organization.
-
 **##FRONTEND FEATURES:**
 
 **### 1.UI/UX DESIGN:**
@@ -57,6 +57,16 @@ JavaScript is a language that can be embedded in HTML and run automatically when
 **### 5.Responsiveness:**
 Responsiveness is the ability for a website to adapt the disposal of its content according to the reader’s device. For instance, you won’t see this article the same way if you read it on your smartphone and on your desktop.The responsiveness of a web app helps to display content precisely and improves readability and user experience.Our website is responsive till 600 px.
 
+**##BACKEND FEATURES:**
+
+**### 1.UI/UX DESIGN:**
+
+**### 1.UI/UX DESIGN:**
+
+**### 1.UI/UX DESIGN:**
+
+**### 1.UI/UX DESIGN:**
+
 **##HOSTED URL:** *https://techomia.netlify.app/*
 
 **##TECHNOLOGIES USED:**
@@ -65,9 +75,18 @@ CSS
 JAVASCRIPT
 NodeJS
 Express.js
-postgreSQL
+PostgreSQL
 
 **## LOCAL SETUP FOR FRONTEND:**
+
+1.
+
+2.
+
+3.
+
+**## LOCAL SETUP FOR BACKEND:**
+*https://github.com/chinmay-gupta-2003/Webkriti_Backend-2022/blob/master/readme.md*
 
 **## TEAM-MEMBERS:**
 
