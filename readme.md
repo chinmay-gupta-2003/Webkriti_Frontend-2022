@@ -80,26 +80,31 @@ At TECHOMIA, we believe there is a better way to do event handling, a more valua
 
 ### HOSTED URL: *https://techomia.netlify.app/*
 
-## TECHNOLOGIES USED:
+### TECHNOLOGIES USED:
 
 **HTML**
+
 **CSS**
+
 **JAVASCRIPT**
+
 **NodeJS**
+
 **Express.js**
+
 **PostgreSQL**
 
-## LOCAL SETUP FOR FRONTEND:
+### LOCAL SETUP FOR FRONTEND:
 
-1. ### [Download Code](https://github.com/chinmay-gupta-2003/Webkriti_Frontend-2022/archive/refs/heads/master.zip)
+1. [**Download Code**](https://github.com/chinmay-gupta-2003/Webkriti_Frontend-2022/archive/refs/heads/master.zip)
 
-2. ### Run on Local host , [_Live Server Extension_](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+2. **Run on Local host** , [_Live Server Extension_](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-## LOCAL SETUP FOR BACKEND:
+### LOCAL SETUP FOR BACKEND:
 
-> ### [Backend readme.md](https://github.com/chinmay-gupta-2003/Webkriti_Backend-2022/blob/master/readme.md)
+[**Backend readme.md**](https://github.com/chinmay-gupta-2003/Webkriti_Backend-2022/blob/master/readme.md)
 
-## TEAM-MEMBERS:
+### TEAM-MEMBERS:
 
 1. _CHINMAY GUPTA :- 2021-IMT-023_
 2. _KARUNA SINGHAL :- 2021-IMT-049_
