@@ -83,15 +83,10 @@ At TECHOMIA, we believe there is a better way to do event handling, a more valua
 ### TECHNOLOGIES USED:
 
 **HTML**
-
 **CSS**
-
 **JAVASCRIPT**
-
 **NodeJS**
-
 **Express.js**
-
 **PostgreSQL**
 
 ### LOCAL SETUP FOR FRONTEND:
@@ -102,7 +97,7 @@ At TECHOMIA, we believe there is a better way to do event handling, a more valua
 
 ### LOCAL SETUP FOR BACKEND:
 
-[**Backend readme.md**](https://github.com/chinmay-gupta-2003/Webkriti_Backend-2022/blob/master/readme.md)
+> [**Backend readme.md**](https://github.com/chinmay-gupta-2003/Webkriti_Backend-2022/blob/master/readme.md)
 
 ### TEAM-MEMBERS:
 
