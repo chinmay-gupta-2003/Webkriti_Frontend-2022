@@ -1,4 +1,5 @@
-**##TECHOMIA:**
+# TECHOMIA
+
 Unleashing complexities of Event Handling
 
 **DESCRIPTION:**
@@ -6,66 +7,60 @@ At TECHOMIA, we believe there is a better way to do event handling, a more valua
 
 **##SCREENSHOTS:**
 
-_#Hero Section#_
+_Hero Section_
 ![This is an image](./readme_img/hero.png)
 
-_#Create Account Popup_
+_Create Account Popup_
 ![This is an image](./readme_img/create-account.png)
 
-_#Events Section_
+_Events Section_
 ![This is an image](./readme_img/eve-section.png)
 
-_#Event Popup_
+_Event Popup_
 ![This is an image](./readme_img/events-popup.png)
 
-_#User Events_
+_User Events_
 ![This is an image](./readme_img/user-events.png)
 
-_#How it Works Section_
+_How it Works Section_
 ![This is an image](./readme_img/how-it-works.png)
 
-_#Testimonial Section_
+_Testimonial Section_
 ![This is an image](./readme_img/testimonial.png)
 
-_#Globe_
+_Globe_
 ![This is an image](./readme_img/globe.png)
 
-_#Footer_
+_Footer_
 ![This is an image](./readme_img/footer.png)
 
-_#Contact Us_
+_Contact Us_
 ![This is an image](./readme_img/contact-us.png)
 
-_#Terms of Use_
+_Terms of Use_
 ![This is an image](./readme_img/tou.png)
 
 **##FRONTEND FEATURES:**
 
-**### 1.UI/UX DESIGN:**
-All aspects of the design are clear and thoughtful in terms of functionality as well as aesthetic appeal both in terms of colour schemes and how
-they are visually organized from eachother,which helps users find what they are looking for faster and more conveniently.
+1. **UI/UX DESIGN:**
+   All aspects of the design are clear and thoughtful in terms of functionality as well as aesthetic appeal both in terms of colour schemes and how
+   they are visually organized from eachother,which helps users find what they are looking for faster and more conveniently.
 
-**### 2.LAYOUT**
-Website layout is the careful arrangement of visual elements on web pages using HTML5 markup languages ​​and CSS style sheets. Interactive elements are created using JavaScript programming language.
+2. **LAYOUT**
+   Website layout is the careful arrangement of visual elements on web pages using HTML5 markup languages ​​and CSS style sheets. Interactive elements are created using JavaScript programming language.
 
-**### 3.Internet Marketing:**
-Internet marketing is in close contact with front-end development as closely as possible. It is through the visual design and functionality of the site that the marketer leads the client to a purchase or a key action.Internet marketing is one of the most important aspects of our website because any design and appearance is focused on attracting customers.
+3. **Internet Marketing:**
+   Internet marketing is in close contact with front-end development as closely as possible. It is through the visual design and functionality of the site that the marketer leads the client to a purchase or a key action.Internet marketing is one of the most important aspects of our website because any design and appearance is focused on attracting customers.
 
-**### 4.JavaScript programming:**
-JavaScript is a language that can be embedded in HTML and run automatically when you visit your favorite websites. Unlike other languages ​​such as Java or C# (C Sharp), it doesn’t need to be compiled before running, as JavaScripts are distributed on the web as plain text without any special preparation, which means they are quite fast and easy to use.
+4. **JavaScript programming:**
+   JavaScript is a language that can be embedded in HTML and run automatically when you visit your favorite websites. Unlike other languages ​​such as Java or C# (C Sharp), it doesn’t need to be compiled before running, as JavaScripts are distributed on the web as plain text without any special preparation, which means they are quite fast and easy to use.
 
-**### 5.Responsiveness:**
-Responsiveness is the ability for a website to adapt the disposal of its content according to the reader’s device. For instance, you won’t see this article the same way if you read it on your smartphone and on your desktop.The responsiveness of a web app helps to display content precisely and improves readability and user experience.Our website is responsive till 600 px.
+5. **Responsiveness:**
+   Responsiveness is the ability for a website to adapt the disposal of its content according to the reader’s device. For instance, you won’t see this article the same way if you read it on your smartphone and on your desktop.The responsiveness of a web app helps to display content precisely and improves readability and user experience.Our website is responsive till 600 px.
 
 **##BACKEND FEATURES:**
 
-**### 1.UI/UX DESIGN:**
-
-**### 1.UI/UX DESIGN:**
-
-**### 1.UI/UX DESIGN:**
-
-**### 1.UI/UX DESIGN:**
+1. **UI/UX DESIGN:**
 
 **##HOSTED URL:** *https://techomia.netlify.app/*
 
