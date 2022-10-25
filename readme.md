@@ -79,11 +79,9 @@ PostgreSQL
 
 **## LOCAL SETUP FOR FRONTEND:**
 
-1.
+1. [Download Code](https://github.com/chinmay-gupta-2003/Webkriti_Frontend-2022/archive/refs/heads/master.zip)
 
-2.
-
-3.
+2. Run on Local host , [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 **## LOCAL SETUP FOR BACKEND:**
 *https://github.com/chinmay-gupta-2003/Webkriti_Backend-2022/blob/master/readme.md*
