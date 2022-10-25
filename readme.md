@@ -78,11 +78,16 @@ At TECHOMIA, we believe there is a better way to do event handling, a more valua
 
 1. ### lorem:
 
-## HOSTED URL: *https://techomia.netlify.app/*
+### HOSTED URL: *https://techomia.netlify.app/*
 
 ## TECHNOLOGIES USED:
 
-> **HTML** > **CSS** > **JAVASCRIPT** > **NodeJS** > **Express.js** > **PostgreSQL**
+**HTML**
+**CSS**
+**JAVASCRIPT**
+**NodeJS**
+**Express.js**
+**PostgreSQL**
 
 ## LOCAL SETUP FOR FRONTEND:
 
