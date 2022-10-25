@@ -3,6 +3,39 @@ Unleashing complexities of Event Handling
 
 **##SCREENSHOTS:**
 
+_#Hero Section#_
+![This is an image](./readme_img/hero.png)
+
+_#Create Account Popup_
+![This is an image](./readme_img/create-account.png)
+
+_#Events Section_
+![This is an image](./readme_img/eve-section.png)
+
+_#Event Popup_
+![This is an image](./readme_img/events-popup.png)
+
+_#User Events_
+![This is an image](./readme_img/user-events.png)
+
+_#How it Works Section_
+![This is an image](./readme_img/how-it-works.png)
+
+_#Testimonial Section_
+![This is an image](./readme_img/testimonial.png)
+
+_#Globe_
+![This is an image](./readme_img/globe.png)
+
+_#Footer_
+![This is an image](./readme_img/footer.png)
+
+_#Contact Us_
+![This is an image](./readme_img/contact-us.png)
+
+_#Terms of Use_
+![This is an image](./readme_img/tou.png)
+
 **DESCRIPTION:**
 At TECHOMIA, we believe there is a better way to do event handling, a more valuable, less invasive way where organizations and universities are earned rather than bought. We are obsessively passionate about it. The Novelty associated with TECHOMIA is that our website is inexhautible. It cannot be used for organising just single event/fest instead can be used to organise multiple events/fest round the year by client organization.
 
@@ -41,5 +74,3 @@ postgreSQL
 1. CHINMAY GUPTA :- 2021-IMT-023
 2. KARUNA SINGHAL :- 2021-IMT-049
 3. MANASVI KHATRI :- 2021-IMT-062
-
-![This is an image](./readme_img/hero.png)
