@@ -76,7 +76,21 @@ At TECHOMIA, we believe there is a better way to do event handling, a more valua
 
 ## BACKEND FEATURES:
 
-1. ### lorem:
+1. ### Feature-1
+
+   Rest server written in node.js for authentication and events management.
+
+2. ### Feature-2
+
+   Admin API for creating the events
+
+3. ### Feature-3
+
+   API coverage: User Registration, Authentication , Event Creation (Admin side), Events Registration and Management
+
+4. ### Feature-4
+
+   JWT auth (for authentication)
 
 ### HOSTED URL: *https://techomia.netlify.app/*
 
