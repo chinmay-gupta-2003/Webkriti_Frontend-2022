@@ -1,89 +1,101 @@
 # TECHOMIA
 
-Unleashing complexities of Event Handling
+Unleashing complexities of Event Handling !
 
-**DESCRIPTION:**
+## DESCRIPTION:
+
 At TECHOMIA, we believe there is a better way to do event handling, a more valuable, less invasive way where organizations and universities are earned rather than bought. We are obsessively passionate about it. The Novelty associated with TECHOMIA is that our website is inexhautible. It cannot be used for organising just single event/fest instead can be used to organise multiple events/fest round the year by client organization.
 
-**##SCREENSHOTS:**
+## SCREENSHOTS:
 
-_Hero Section_
+### Hero Section
+
 ![This is an image](./readme_img/hero.png)
 
-_Create Account Popup_
+### Create Account Popup
+
 ![This is an image](./readme_img/create-account.png)
 
-_Events Section_
+### Events Section
+
 ![This is an image](./readme_img/eve-section.png)
 
-_Event Popup_
+### Event Popup
+
 ![This is an image](./readme_img/events-popup.png)
 
-_User Events_
+### User Events
+
 ![This is an image](./readme_img/user-events.png)
 
-_How it Works Section_
+### How it Works Section
+
 ![This is an image](./readme_img/how-it-works.png)
 
-_Testimonial Section_
+### Testimonial Section
+
 ![This is an image](./readme_img/testimonial.png)
 
-_Globe_
+### Globe
+
 ![This is an image](./readme_img/globe.png)
 
-_Footer_
+### Footer
+
 ![This is an image](./readme_img/footer.png)
 
-_Contact Us_
+### Contact Us
+
 ![This is an image](./readme_img/contact-us.png)
 
-_Terms of Use_
+### Terms of Use
+
 ![This is an image](./readme_img/tou.png)
 
-**##FRONTEND FEATURES:**
+## FRONTEND FEATURES:
 
-1. **UI/UX DESIGN:**
+1. ### UI/UX DESIGN:
+
    All aspects of the design are clear and thoughtful in terms of functionality as well as aesthetic appeal both in terms of colour schemes and how
    they are visually organized from eachother,which helps users find what they are looking for faster and more conveniently.
 
-2. **LAYOUT**
+2. ### LAYOUT
+
    Website layout is the careful arrangement of visual elements on web pages using HTML5 markup languages ​​and CSS style sheets. Interactive elements are created using JavaScript programming language.
 
-3. **Internet Marketing:**
+3. ### Internet Marketing:
+
    Internet marketing is in close contact with front-end development as closely as possible. It is through the visual design and functionality of the site that the marketer leads the client to a purchase or a key action.Internet marketing is one of the most important aspects of our website because any design and appearance is focused on attracting customers.
 
-4. **JavaScript programming:**
+4. ### JavaScript programming:
+
    JavaScript is a language that can be embedded in HTML and run automatically when you visit your favorite websites. Unlike other languages ​​such as Java or C# (C Sharp), it doesn’t need to be compiled before running, as JavaScripts are distributed on the web as plain text without any special preparation, which means they are quite fast and easy to use.
 
-5. **Responsiveness:**
+5. ### Responsiveness:
    Responsiveness is the ability for a website to adapt the disposal of its content according to the reader’s device. For instance, you won’t see this article the same way if you read it on your smartphone and on your desktop.The responsiveness of a web app helps to display content precisely and improves readability and user experience.Our website is responsive till 600 px.
 
-**##BACKEND FEATURES:**
+## BACKEND FEATURES:
 
-1. **UI/UX DESIGN:**
+1. ### lorem:
 
-**##HOSTED URL:** *https://techomia.netlify.app/*
+## HOSTED URL: *https://techomia.netlify.app/*
 
-**##TECHNOLOGIES USED:**
-HTML
-CSS
-JAVASCRIPT
-NodeJS
-Express.js
-PostgreSQL
+## TECHNOLOGIES USED:
 
-**## LOCAL SETUP FOR FRONTEND:**
+> **HTML** > **CSS** > **JAVASCRIPT** > **NodeJS** > **Express.js** > **PostgreSQL**
 
-1. [**Download Code**](https://github.com/chinmay-gupta-2003/Webkriti_Frontend-2022/archive/refs/heads/master.zip)
+## LOCAL SETUP FOR FRONTEND:
 
-2. Run on Local host , [_Live Server Extension_](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+1. ### [Download Code](https://github.com/chinmay-gupta-2003/Webkriti_Frontend-2022/archive/refs/heads/master.zip)
 
-**## LOCAL SETUP FOR BACKEND:**
+2. ### Run on Local host , [_Live Server Extension_](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-> [**Backend readme.md**](https://github.com/chinmay-gupta-2003/Webkriti_Backend-2022/blob/master/readme.md)
+## LOCAL SETUP FOR BACKEND:
 
-**## TEAM-MEMBERS:**
+> ### [Backend readme.md](https://github.com/chinmay-gupta-2003/Webkriti_Backend-2022/blob/master/readme.md)
 
-1. CHINMAY GUPTA :- 2021-IMT-023
-2. KARUNA SINGHAL :- 2021-IMT-049
-3. MANASVI KHATRI :- 2021-IMT-062
+## TEAM-MEMBERS:
+
+1. _CHINMAY GUPTA :- 2021-IMT-023_
+2. _KARUNA SINGHAL :- 2021-IMT-049_
+3. _MANASVI KHATRI :- 2021-IMT-062_
