@@ -81,9 +81,9 @@ PostgreSQL
 
 1. [**Download Code**](https://github.com/chinmay-gupta-2003/Webkriti_Frontend-2022/archive/refs/heads/master.zip)
 
-2. Run on Local host , [_Live Server Extension_] (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+2. Run on Local host , [_Live Server Extension_](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-**## LOCAL SETUP FOR BACKEND:**[_Backend readme.md_] (https://github.com/chinmay-gupta-2003/Webkriti_Backend-2022/blob/master/readme.md)
+**## LOCAL SETUP FOR BACKEND:**[**Backend readme.md**](https://github.com/chinmay-gupta-2003/Webkriti_Backend-2022/blob/master/readme.md)
 
 **## TEAM-MEMBERS:**
 
