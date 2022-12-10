@@ -1,4 +1,4 @@
-const baseURL = "https://techomia.herokuapp.com/api";
+const baseURL = "https://techomia-rest.onrender.com/api";
 
 const getAllEventsEndpoint = "/events/all";
 const getAllUserEventsEndpoint = "/events/allUserEvents";
